@@ -9,18 +9,36 @@
 import UIKit
 import RippleButton
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+
+    @IBOutlet fileprivate weak var rippleButton: RippleButton!
+    @IBOutlet fileprivate weak var boundButton: RippleButton!
+    @IBOutlet fileprivate weak var popButton: RippleButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        view.addSubview(rippleButton)
+        view.addSubview(boundButton)
+        view.addSubview(popButton)
+
+        rippleButton.selectAnimationType = .ripple
+        boundButton.selectAnimationType  = .bound
+        popButton.selectAnimationType    = .pop
+
+        rippleButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+        boundButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+        popButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func tappedButton(sender: RippleButton) {
+        if sender.isSelected {
+            sender.deselect()
+        } else {
+            sender.select()
+            print("tapped")
+        }
     }
-
 
 }
 

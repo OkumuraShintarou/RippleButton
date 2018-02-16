@@ -13,7 +13,7 @@ open class RippleButton: UIButton {
     public enum animationsType: String {
         case bound
         case pop
-        case flash
+        case ripple
     }
 
     @IBInspectable open var duration     : Double = 0.0 // Set Initial Value
@@ -34,7 +34,7 @@ open class RippleButton: UIButton {
             showAnimation.shared.bound(button: self)
         case .pop:
             showAnimation.shared.pop(button: self)
-        case .flash:
+        case .ripple:
             showAnimation.shared.flash(button: self)
         }
     }
