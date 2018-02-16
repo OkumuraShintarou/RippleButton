@@ -12,7 +12,7 @@ final class showAnimation: RippleButton {
 
     static let shared = showAnimation()
 
-    func flash(button: RippleButton) {
+    func ripple(button: RippleButton) {
         UIView.animate(withDuration: 0.2, animations: {
             button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             button.alpha = 1.0
