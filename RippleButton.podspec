@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/OkumuraShintarou/RippleButton"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Shinta" => "flekystyley@gmail.com" }
-  s.platform   = :ios, "8.0"
+  s.platform     = :ios, "8.0"
   s.requires_arc = true
   s.source       = { :git => "https://github.com/OkumuraShintarou/RippleButton.git", :commit => s.version }
-  s.source_files  = "Classes", "Classes/* .swift"
+  s.source_files = "Classes/* .swift"
 end
