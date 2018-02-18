@@ -21,10 +21,12 @@ final class ViewController: UIViewController {
         view.addSubview(rippleButton)
         view.addSubview(boundButton)
         view.addSubview(popButton)
+        view.addSubview(slowRippleButton)
 
         rippleButton.selectAnimationType = .ripple
         boundButton.selectAnimationType  = .bound
         popButton.selectAnimationType    = .pop
+
 
         rippleButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
         boundButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)

@@ -14,11 +14,8 @@ open class RippleButton: UIButton {
         case bound
         case pop
         case ripple
+//        case slowRipple
     }
-
-//    @IBInspectable open var duration : Double = 0.0 // Set Initialize Value
-//    @IBInspectable open var delyay : Double = 0.0 // Set Initialize Value
-//    @IBInspectable open var rippleDurationRange : Double = 0.2 // Set Initialize Value
 
     fileprivate var selectedAnimationType : animationsType!
 
@@ -36,6 +33,8 @@ open class RippleButton: UIButton {
             showAnimation.shared.pop(button: self)
         case .ripple:
             showAnimation.shared.ripple(button: self)
+//        case .slowRipple:
+//            showAnimation.shared.slowRipple(button: self)
         }
     }
 

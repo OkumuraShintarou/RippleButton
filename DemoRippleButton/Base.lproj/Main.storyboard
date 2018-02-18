@@ -18,41 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-kr-oOj" customClass="RippleButton" customModule="RippleButton">
-                                <rect key="frame" x="34" y="301" width="71" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="71" id="o9L-Jg-Pkh"/>
-                                    <constraint firstAttribute="height" constant="69" id="peL-09-Fj7"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="ic_play_circle_outline_3x"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhl-3S-fQA" customClass="RippleButton" customModule="RippleButton">
+                                <rect key="frame" x="65" y="309" width="36" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icon_correct"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhl-3S-fQA" customClass="RippleButton" customModule="RippleButton">
-                                <rect key="frame" x="152" y="301" width="70" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="ddH-sl-Zt9"/>
-                                    <constraint firstAttribute="width" constant="70" id="mJZ-yq-zGs"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="ic_play_circle_outline_3x"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv4-j1-wJE" customClass="RippleButton" customModule="RippleButton">
+                                <rect key="frame" x="271" y="311" width="38" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icon_correct"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv4-j1-wJE" customClass="RippleButton" customModule="RippleButton">
-                                <rect key="frame" x="266" y="301" width="76" height="69"/>
-                                <state key="normal" title="Button" image="ic_play_circle_outline_3x"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-kr-oOj" customClass="RippleButton" customModule="RippleButton">
+                                <rect key="frame" x="169" y="311" width="36" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icon_correct"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="1iN-kr-oOj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="0al-Vv-pRY"/>
-                            <constraint firstItem="Lhl-3S-fQA" firstAttribute="leading" secondItem="1iN-kr-oOj" secondAttribute="trailing" constant="47" id="1bx-q6-zg1"/>
-                            <constraint firstItem="Lhl-3S-fQA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AMC-5j-sDR"/>
-                            <constraint firstItem="1iN-kr-oOj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="281" id="CXU-AY-mA9"/>
-                            <constraint firstItem="Lhl-3S-fQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="281" id="FJa-tg-ael"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mv4-j1-wJE" secondAttribute="trailing" constant="33" id="Krp-Rb-pYE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1iN-kr-oOj" secondAttribute="bottom" constant="297" id="SPz-c6-TLL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mv4-j1-wJE" secondAttribute="bottom" constant="297" id="Tee-8x-qNt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lhl-3S-fQA" secondAttribute="bottom" constant="297" id="XdD-10-2Uj"/>
-                            <constraint firstItem="mv4-j1-wJE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="281" id="gsg-8S-rcO"/>
-                            <constraint firstItem="mv4-j1-wJE" firstAttribute="leading" secondItem="Lhl-3S-fQA" secondAttribute="trailing" constant="44" id="uf8-I2-Trs"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -63,10 +45,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.5" y="132.5"/>
+            <point key="canvasLocation" x="138.40000000000001" y="131.78410794602701"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ic_play_circle_outline_3x" width="72" height="72"/>
+        <image name="icon_correct" width="36" height="36"/>
     </resources>
 </document>
