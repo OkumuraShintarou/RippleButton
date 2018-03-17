@@ -12,7 +12,7 @@ final class showAnimation: RippleButton {
 
     static let shared = showAnimation()
 
-    func ripple(button: RippleButton) {
+    func ripple(using button: RippleButton) {
         UIView.animate(withDuration: 0.2, animations: {
             button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
             button.alpha = 1.0
@@ -75,7 +75,7 @@ final class showAnimation: RippleButton {
         })
     }
 
-    func slowRipple(button: RippleButton) {
+//    func slowRipple(using button: RippleButton) {
 //        UIView.animate(withDuration: 0.5, animations: {
 //            button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
 //        }, completion: { _ in
@@ -125,9 +125,9 @@ final class showAnimation: RippleButton {
 //                })
 //            })
 //        })
-    }
+//    }
 
-    func bound(button: RippleButton) {
+    func bound(using button: RippleButton) {
         UIView.animate(withDuration: 0.2, animations: {
             button.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
         }, completion: { _ in
@@ -140,10 +140,10 @@ final class showAnimation: RippleButton {
                     UIView.animate(withDuration: 0.2, animations: {
                         button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
                     }, completion: { _ in
-                        UIView.animate(withDuration: 0.5, // アニメーションにかかる時間
-                            delay: 0.0, // アニメーションを遅らせる時間
-                            usingSpringWithDamping: 0.5, // アニメーションが終わった後のバウンドにかける時間
-                            initialSpringVelocity: 8, // アニメーションのバウンドの速さ
+                        UIView.animate(withDuration: 0.5,
+                            delay: 0.0,
+                            usingSpringWithDamping: 0.5,
+                            initialSpringVelocity: 8,
                             options: .curveEaseIn,
                             animations: { () -> Void in
                                 button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
@@ -156,7 +156,7 @@ final class showAnimation: RippleButton {
         })
     }
 
-    func pop(button: RippleButton) {
+    func pop(using button: RippleButton) {
         UIView.animate(withDuration: 0.2, animations: {
             button.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
         }, completion: { _ in

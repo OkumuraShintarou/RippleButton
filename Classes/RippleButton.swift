@@ -27,11 +27,11 @@ open class RippleButton: UIButton {
     fileprivate func startAnimation(using animationsType: animationsType) {
         switch animationsType {
         case .bound:
-            showAnimation.shared.bound(button: self)
+            showAnimation.shared.bound(using: self)
         case .pop:
-            showAnimation.shared.pop(button: self)
+            showAnimation.shared.pop(using: self)
         case .ripple:
-            showAnimation.shared.ripple(button: self)
+            showAnimation.shared.ripple(using: self)
         }
     }
 
